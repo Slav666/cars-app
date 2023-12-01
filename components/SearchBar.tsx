@@ -1,5 +1,5 @@
 "use client";
-import SearchManufacturer from "./SearchManufacturer";
+ import SearchManufacturer from "./SearchManufacturer";
 import { useState } from "react";
 
 const SearchBar = () => {
