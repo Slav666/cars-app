@@ -7,8 +7,8 @@ import { SearchManuFacturerProps } from "@/types";
 import { manufacturers } from "../constants/index";
 
 const SearchManufacturer = ({
-  manufacturer,
-  setManufacturer,
+  selected,
+  setSelected,
 }: SearchManuFacturerProps) => {
   console.log(manufacturers);
   const [query, setQuery] = useState("");
@@ -25,7 +25,7 @@ const SearchManufacturer = ({
 
   return (
     <div className="search-manufacturer">
-      <Combobox value={manufacturer} onChange={setManufacturer}>
+      <Combobox value={selected} onChange={setSelected}>
         <div className="relative w-full">
           <Combobox.Button className="absolute top-[14px]">
             <Image
@@ -80,8 +80,6 @@ const SearchManufacturer = ({
                         >
                           {item}
                         </span>
-
-                        {/* Show an active blue background color if the option is selected */}
                         {selected ? (
                           <span
                             className={`absolute inset-y-0 left-0 flex items-center pl-3 ${
