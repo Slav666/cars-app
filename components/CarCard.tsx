@@ -38,10 +38,9 @@ const CarCard = ({ car }: CarCardProps) => {
         </span>
       </p>
 
-      <div className="relative w-full h-40 my-3 object-contain">
+      <div className="relative w-full h-40 my-3 object-contain bg-blue-100">
         <Image
           src={getCarImageUrl(car)}
-          // src="/hero1.png"
           alt="car model"
           fill
           priority
@@ -49,7 +48,7 @@ const CarCard = ({ car }: CarCardProps) => {
         />
       </div>
 
-      <div className="relative flex w-full mt-2">
+      <div className="relative flex w-full mt-2 ">
         <div className="flex group-hover:invisible w-full justify-between text-grey">
           <div className="flex flex-col justify-center items-center gap-2">
             <Image
